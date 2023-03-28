@@ -166,7 +166,7 @@ const projectsModule = (() => {
       //projectsContainer.innerHTML = ""; // Remove this line
       renderProjects();
     } else {
-      alert("You don't have enough resources to start this project.");
+      alert("您没有足够的资源来启动此项目。");
     }
   }
 

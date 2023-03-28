@@ -35,19 +35,19 @@ class ProgressionManager {
 
     // Check for GameWin
     if (window.gameState.research.gameWon) {
-      alert("Congrats. You won the Demo. Feedback highly appreciated. Also, take a screenshot of your factory and share it, that would be even more appreciated :)");
+      alert("恭喜。 您赢得了演示。 非常感谢反馈。 另外，将您的工厂截图并分享，将不胜感激 :)");
       window.gameState.research.gameWon = false;
     }
 
     // Check for GameWin
     if (window.gameState.research.gameWon2) {
-      alert("Wow Impressive! Now I really want to see your factory! How long did it take you to get here?");
+      alert("哇令人印象深刻！ 现在我真的很想看看你们的工厂！ 你花了多长时间才到这里？");
       window.gameState.research.gameWon2 = false;
     }
 
     // Check for GameWin
     if (window.gameState.research.gameWon3) {
-      alert("This you must explain to me.");
+      alert("这个你得给我解释清楚。");
       window.gameState.research.gameWon3 = false;
     }
 

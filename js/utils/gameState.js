@@ -122,7 +122,7 @@ function loadSaveStateFromString(saveStateString) {
     location.reload();
   } catch (error) {
     console.error("Invalid save state string:", error);
-    alert("Invalid save state string. Please check the input and try again.");
+    alert("无效的存档状态字符串。 请检查输入并重试。");
   }
 }
 
