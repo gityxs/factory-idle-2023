@@ -1,0 +1,369 @@
+/* General styles */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 28px;
+}
+
+.game-section {
+    margin-bottom: 30px;
+}
+
+/* Parcels styles */
+#parcels {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.parcel {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #1a1a1a;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.parcel-number {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Parcel tabs styles */
+#parcel-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.parcel-tab {
+  border: 1px solid #1a1a1a;
+  background: -webkit-linear-gradient(top, #ffffff, #888888);
+  padding: 4px 8px;
+  border-radius: 2px;
+  box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+  text-shadow: #cccccc 0 1px 0;
+  color: #000;
+  font-size: 14px;
+  font-family: helvetica, serif;
+  text-decoration: none;
+  vertical-align: middle;
+  outline: none;
+  cursor: pointer;
+}
+
+.parcel-tab:hover {
+    background: -webkit-linear-gradient(top, #888888, #ffffff);
+}
+
+.parcel-tab.selected {
+    background-color: #007bff;
+    background: -webkit-linear-gradient(top, #ccc, #fff);
+    border: 1px solid #888;
+}
+
+
+/* Resources styles */
+#resources {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.resource {
+    width: 150px;
+    height: 50px;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+    border: 1px solid #1a1a1a;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.resource-name {
+    margin-bottom: 5px;
+}
+
+/* Buildings styles */
+#buildings {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.building {
+    width: 150px;
+    height: 100px;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+    border: 1px solid #1a1a1a;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.building-name {
+    font-weight: bold;
+    margin-bottom: 5px 0;
+}
+
+/* Buttons */
+button {
+    border: 1px solid #1a1a1a;
+    background: -webkit-linear-gradient(top, #ffffff, #888888);
+    padding: 4px 8px;
+    border-radius: 2px;
+    box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    text-shadow: #cccccc 0 1px 0;
+    color: #000000;
+    font-size: 14px;
+    font-family: helvetica, serif;
+    text-decoration: none;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: -webkit-linear-gradient(top, #888888, #ffffff);
+}
+
+button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Tooltips */
+.tooltip {
+  position: absolute;
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  z-index: 9999;
+}
+
+.category.global {
+  /* Add styles for the global category if needed */
+}
+
+.subcategory.energy {
+  /* Add styles for the energy subcategory if needed */
+}
+
+.global {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subcategory {
+  margin-right: 20px;
+}
+
+.energy-stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.energy-usage,
+.energy-production {
+  margin: 5px 0;
+}
+
+.label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* Projects */
+.project-box {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+}
+
+/* Feedback Button */
+
+#feedback-button {
+  border: 1px solid #1a1a1a;
+  background: -webkit-linear-gradient(top, #ffffff, #888888);
+  padding: 4px 8px;
+  border-radius: 2px;
+  box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+  text-shadow: #cccccc 0 1px 0;
+  color: #000000;
+  font-size: 14px;
+  font-family: helvetica, serif;
+  text-decoration: none;
+  vertical-align: middle;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  z-index: 100;
+}
+
+#feedback-button:hover {
+  background: -webkit-linear-gradient(top, #888888, #ffffff);
+}
+
+/* Intro Animation */
+
+#intro {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+
+#intro-text {
+  font-size: 3rem;
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeIn 4s backwards, grow 6s linear infinite, fadeOut 2s 4s forwards;
+}
+
+@keyframes fadeIn {
+  0%, 30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Save Button Animation */
+.save-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.save-text,
+.save-checkmark {
+  transition: transform 0.3s ease-in-out;
+}
+
+.save-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+}
+
+/* Reset Button */
+.reset-confirmation {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.reset-confirmation p {
+  margin-bottom: 1rem;
+}
+
+/* Belt Controller */
+.belt-controller{
+  display:flex;
+  width:120px;
+  border:1px solid black;
+}
+
+.belt-btn{
+  width:30px;
+  text-align:center;
+  background-color:#AAAAAA;
+  padding:5px 3px;
+  user-select: none;
+}
+.belt-btn:hover{
+  background-color:#CCCCCC;
+  cursor:pointer;
+}
+.belt-btn:active{
+  background-color:#666666;
+}
+
+.belt-display{
+  width:80%;
+  text-align:center;
+  border-left: 1px solid black;
+  border-top: 0px;
+  border-right: 1px solid black;
+  border-bottom: 0px;
+}
+
+/* Title and Version Number */
+h1 {
+  position: relative;
+  text-align: center;
+}
+
+.title-text {
+  display: inline-block;
+}
+
+.version-number {
+  position: absolute;
+  right: 0;
+  font-size: 0.6em;
+  font-weight: normal;
+  color: #666;
+}
+
+
+/* Custom Dropdown */
